@@ -7,7 +7,7 @@ url = url + key
 
 url = url + "&numResults=3&format=json&id="
 npr_id = raw_input("Which NPR ID do you want to query?")
-url += npr_id
+url += npr_id #1001, 1002, ... 1007
 
 response = urlopen(url)
 json_obj = load(response)
